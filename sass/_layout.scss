@@ -1,0 +1,29 @@
+body {
+    background-color: $tan;
+    background-image: url('images/feathers.png');
+}
+
+.site {
+    max-width: $site-max-width;
+    margin: 40px auto;
+}
+
+.site-content {
+    padding: 10px 0;
+    background-color: white;
+}
+
+.content-area, .widget-area {
+    margin: 0;
+    padding: 0;
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+}
+
+.content-area {
+    /*width: 75%;*/
+    padding: 0 60px;
+}
+
+.widget-area {
+}

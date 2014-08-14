@@ -1,0 +1,43 @@
+//http://hellohappy.org/beautiful-web-type/
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic|Bree+Serif);
+
+// Some common variables and mixins to get you started.
+// Variables allow you to re-use colors, sizes, and other values without repeating
+// yourself. This means that changes that should be small, such as tweaking the
+// coloring or the sizing, can be done in one place, not all over the stylesheet.
+
+// Supported Values for $layout:
+//  null | content-sidebar | sidebar-content
+$layout: content-sidebar !default;
+$vspacing: 1.5em;
+
+$site-max-width: 1000px;
+
+
+$type-1: 48px;
+$type-2: 24px;
+$type-3: 20px;
+$type-4: 16px;
+$type-5: 12px;
+
+
+/* colors */
+$dark-gray: #27251F;
+$navy: #004D5C;
+$tan: #D6D0C3;
+
+// base color scheme
+$body-background: #fff;
+$text-color: $dark-gray;
+$accent-color: $navy;
+$link-color: $accent-color;
+$link-visited: purple;
+
+$base-font: 'Source Sans Pro', sans-serif;
+$header-font: 'Bree Serif', serif; // you can refer to other variables
+
+
+.accent {
+    color: $accent-color;
+}
