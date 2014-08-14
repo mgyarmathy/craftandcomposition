@@ -19,7 +19,7 @@ Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and Blueprint http://www.blueprintcss.org/
 */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic|Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic|Fredericka+the+Great|Open+Sans+Condensed:300,700);
 /* colors */
 /* line 41, sass/_variables.scss */
 .accent { color: #004d5c; }
@@ -91,104 +91,104 @@ a img { border: 0; }
 
 /* Clearing */
 /* line 5, sass/_typography.scss */
-body, button, input, select, textarea { color: #27251f; font-family: "Source Sans Pro", sans-serif; font-size: 20px; line-height: 1.5; }
+body, button, input, select, textarea { color: #27251f; font-family: "Lora", sans-serif; font-size: 16px; line-height: 1.5; }
 
 /* Headings */
 /* line 13, sass/_typography.scss */
-h1, h2, h3, h4, h5, h6 { font-family: "Bree Serif", serif; clear: both; }
+h1, h2, h3, h4, h5, h6 { font-family: "Open Sans Condensed", serif; font-weight: 700; clear: both; }
 
-/* line 18, sass/_typography.scss */
+/* line 19, sass/_typography.scss */
 h1 { font-size: 48px; }
 
-/* line 22, sass/_typography.scss */
+/* line 23, sass/_typography.scss */
 h2 { font-size: 24px; }
 
-/* line 26, sass/_typography.scss */
-h3 { font-size: 20px; }
+/* line 27, sass/_typography.scss */
+h3 { font-size: 16px; }
 
-/* line 29, sass/_typography.scss */
+/* line 30, sass/_typography.scss */
 hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 1.5em; }
 
 /* Text elements */
-/* line 37, sass/_typography.scss */
+/* line 38, sass/_typography.scss */
 p { margin-bottom: 1.5em; }
 
-/* line 40, sass/_typography.scss */
+/* line 41, sass/_typography.scss */
 ul, ol { margin: 0 0 1.5em 3em; }
 
-/* line 43, sass/_typography.scss */
+/* line 44, sass/_typography.scss */
 ul { list-style: disc; }
 
-/* line 46, sass/_typography.scss */
+/* line 47, sass/_typography.scss */
 ol { list-style: decimal; }
 
-/* line 50, sass/_typography.scss */
+/* line 51, sass/_typography.scss */
 li > ul, li > ol { margin-bottom: 0; margin-left: 1.5em; }
 
-/* line 54, sass/_typography.scss */
+/* line 55, sass/_typography.scss */
 dt { font-weight: bold; }
 
-/* line 57, sass/_typography.scss */
+/* line 58, sass/_typography.scss */
 dd { margin: 0 1.5em 1.5em; }
 
-/* line 60, sass/_typography.scss */
+/* line 61, sass/_typography.scss */
 b, strong { font-weight: bold; }
 
-/* line 63, sass/_typography.scss */
+/* line 64, sass/_typography.scss */
 dfn, cite, em, i { font-style: italic; }
 
-/* line 66, sass/_typography.scss */
+/* line 67, sass/_typography.scss */
 blockquote { margin: 0 1.5em; }
 
-/* line 69, sass/_typography.scss */
+/* line 70, sass/_typography.scss */
 address { margin: 0 0 1.5em; }
 
-/* line 72, sass/_typography.scss */
+/* line 73, sass/_typography.scss */
 pre { background: #eee; font-family: "Courier 10 Pitch", Courier, monospace; font-size: 15px; font-size: 1.5rem; line-height: 1.6; margin-bottom: 1.6em; padding: 1.6em; overflow: auto; max-width: 100%; }
 
-/* line 83, sass/_typography.scss */
+/* line 84, sass/_typography.scss */
 code, kbd, tt, var { font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
 
-/* line 86, sass/_typography.scss */
+/* line 87, sass/_typography.scss */
 abbr, acronym { border-bottom: 1px dotted #666; cursor: help; }
 
-/* line 90, sass/_typography.scss */
+/* line 91, sass/_typography.scss */
 mark, ins { background: #fff9c0; text-decoration: none; }
 
-/* line 95, sass/_typography.scss */
+/* line 96, sass/_typography.scss */
 sup, sub { font-size: 75%; height: 0; line-height: 0; position: relative; vertical-align: baseline; }
 
-/* line 102, sass/_typography.scss */
+/* line 103, sass/_typography.scss */
 sup { bottom: 1ex; }
 
-/* line 105, sass/_typography.scss */
+/* line 106, sass/_typography.scss */
 sub { top: .5ex; }
 
-/* line 108, sass/_typography.scss */
+/* line 109, sass/_typography.scss */
 small { font-size: 75%; }
 
-/* line 111, sass/_typography.scss */
+/* line 112, sass/_typography.scss */
 big { font-size: 125%; }
 
-/* line 114, sass/_typography.scss */
+/* line 115, sass/_typography.scss */
 figure { margin: 0; }
 
-/* line 117, sass/_typography.scss */
+/* line 118, sass/_typography.scss */
 table { margin: 0 0 1.5em; width: 100%; }
 
-/* line 121, sass/_typography.scss */
+/* line 122, sass/_typography.scss */
 th { font-weight: bold; }
 
-/* line 124, sass/_typography.scss */
+/* line 125, sass/_typography.scss */
 img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%; /* Adhere to container width. */ }
 
 /* Links */
-/* line 130, sass/_typography.scss */
+/* line 131, sass/_typography.scss */
 a { color: #004d5c; text-decoration: none; }
 /* line 12, sass/_mixins.scss */
 a:hover, a:active, a:focus { color: black; }
 
-/* line 137, sass/_typography.scss */
+/* line 138, sass/_typography.scss */
 a:visited { color: #004d5c; }
 
 /* line 4, sass/_forms.scss */
@@ -228,55 +228,63 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 textarea { overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */ padding-left: 3px; vertical-align: top; /* Improves readability and alignment in all browsers */ width: 98%; }
 
 /* line 1, sass/_layout.scss */
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* line 3, sass/_layout.scss */
 body { background-color: #d6d0c3; background-image: url("images/feathers.png"); }
 
-/* line 6, sass/_layout.scss */
+/* line 8, sass/_layout.scss */
 .site { max-width: 1000px; margin: 40px auto; }
 
-/* line 11, sass/_layout.scss */
-.site-content { padding: 10px 0; background-color: white; }
+/* line 13, sass/_layout.scss */
+.site-content { padding: 10px 60px; background-color: white; }
 
-/* line 16, sass/_layout.scss */
-.content-area, .widget-area { margin: 0; padding: 0; /*display: inline-block;*/ /*vertical-align: top;*/ }
+/* line 18, sass/_layout.scss */
+.content-area, .widget-area { margin: 0; padding: 0; display: inline-block; vertical-align: top; }
 
-/* line 23, sass/_layout.scss */
-.content-area { /*width: 75%;*/ padding: 0 60px; }
+/* line 25, sass/_layout.scss */
+.content-area { width: 70%; padding-right: 20px; }
+
+/* line 30, sass/_layout.scss */
+.widget-area { width: 29.5%; padding-left: 20px; }
+/* line 34, sass/_layout.scss */
+.widget-area h1 { font-size: 24px; }
 
 /* line 1, sass/_header.scss */
-.site-header { padding: 30px 0; margin: 0px auto; }
-/* line 5, sass/_header.scss */
-.site-header .site-title { font-size: 64px; }
-/* line 9, sass/_header.scss */
+.site-header { padding: 30px 0; margin: 0px auto; background: white; }
+/* line 6, sass/_header.scss */
+.site-header .site-title { font-family: 'Fredericka the Great', cursive; font-weight: 400; font-size: 64px; }
+/* line 12, sass/_header.scss */
 .site-header a { color: #27251f; }
 
 /* =Menu
 ----------------------------------------------- */
-/* line 18, sass/_header.scss */
+/* line 21, sass/_header.scss */
 .main-navigation { clear: both; display: block; /*float: left;*/ text-align: center; width: 70%; margin: 0 auto; }
-/* line 28, sass/_header.scss */
-.main-navigation .menu { /*background-color: $tan;*/ /*background-color: white;*/ font-family: "Bree Serif", serif; font-size: 16px; list-style: none; margin: 0; padding-left: 0; text-transform: uppercase; border-top: 2px solid #27251f; border-bottom: 2px solid #27251f; }
-/* line 40, sass/_header.scss */
+/* line 29, sass/_header.scss */
+.main-navigation .menu { /*background-color: $tan;*/ /*background-color: white;*/ font-family: "Lora", sans-serif; font-size: 14px; list-style: none; margin: 0; padding-left: 0; text-transform: uppercase; border: 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+/* line 42, sass/_header.scss */
 .main-navigation .menu .menu-item { display: inline-block; }
-/* line 49, sass/_header.scss */
+/* line 51, sass/_header.scss */
 .main-navigation ul li { /*float: left;*/ position: relative; padding: 5px 20px; }
-/* line 55, sass/_header.scss */
+/* line 57, sass/_header.scss */
 .main-navigation ul li a { /*display: block;*/ text-decoration: none; }
-/* line 63, sass/_header.scss */
+/* line 65, sass/_header.scss */
 .main-navigation ul li:hover > ul { display: block; }
-/* line 73, sass/_header.scss */
+/* line 75, sass/_header.scss */
 .main-navigation ul ul { box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); display: none; float: left; position: absolute; top: 1.5em; left: 0; z-index: 99999; }
-/* line 87, sass/_header.scss */
+/* line 89, sass/_header.scss */
 .main-navigation ul ul li a { width: 200px; }
-/* line 94, sass/_header.scss */
+/* line 96, sass/_header.scss */
 .main-navigation ul ul ul { left: 100%; top: 0; }
 
 /* Small menu */
-/* line 105, sass/_header.scss */
+/* line 107, sass/_header.scss */
 .menu-toggle { display: none; cursor: pointer; }
 
-@media screen and (max-width: 600px) { /* line 112, sass/_header.scss */
+@media screen and (max-width: 600px) { /* line 114, sass/_header.scss */
   .menu-toggle, .main-navigation.toggled .nav-menu { display: block; }
-  /* line 116, sass/_header.scss */
+  /* line 118, sass/_header.scss */
   .main-navigation ul { display: none; } }
 /* line 1, sass/_footer.scss */
 .site-footer { text-align: center; margin: 20px auto; padding: 20px 0 0; font-size: 12px; }

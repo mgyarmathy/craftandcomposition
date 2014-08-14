@@ -1,6 +1,6 @@
 //http://hellohappy.org/beautiful-web-type/
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic|Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic|Fredericka+the+Great|Open+Sans+Condensed:300,700);
 
 // Some common variables and mixins to get you started.
 // Variables allow you to re-use colors, sizes, and other values without repeating
@@ -17,8 +17,8 @@ $site-max-width: 1000px;
 
 $type-1: 48px;
 $type-2: 24px;
-$type-3: 20px;
-$type-4: 16px;
+$type-3: 16px;
+$type-4: 14px;
 $type-5: 12px;
 
 
@@ -34,8 +34,8 @@ $accent-color: $navy;
 $link-color: $accent-color;
 $link-visited: purple;
 
-$base-font: 'Source Sans Pro', sans-serif;
-$header-font: 'Bree Serif', serif; // you can refer to other variables
+$base-font: 'Lora', sans-serif;
+$header-font: 'Open Sans Condensed', serif; // you can refer to other variables
 
 
 .accent {
