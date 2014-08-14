@@ -15,6 +15,21 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+            <button id="texpapertan">Textured Paper (tan)</button>
+            <button id="texpaper">Textured Paper</button>
+            <button id="knit">Knitted Sweater</button>
+            <button id="stripes">Textured Stripes</button>
+            <button id="paper">Lined Paper</button>
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script>
+            $(document).ready(function() {
+                $('#texpapertan').click(function() { $('body').css('backgroundImage', 'url("/wp-content/themes/CraftAndComposition/images/textured_paper_tan.png")');});
+                $('#texpaper').click(function() { $('body').css('backgroundImage', 'url("/wp-content/themes/CraftAndComposition/images/textured_paper.png")');});
+                $('#knit').click(function() { $('body').css('backgroundImage', 'url("/wp-content/themes/CraftAndComposition/images/knitting.png")');});
+                $('#stripes').click(function() { $('body').css('backgroundImage', 'url("/wp-content/themes/CraftAndComposition/images/textured_stripes.png")');});
+                $('#paper').click(function() { $('body').css('backgroundImage', 'url("/wp-content/themes/CraftAndComposition/images/linedpaper.png")');});
+            });
+            </script>
 
 		<?php if ( have_posts() ) : ?>
 
