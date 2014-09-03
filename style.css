@@ -278,14 +278,6 @@ body { background-color: #D6D0C3; background-image: url("images/debut_light.png"
 /* line 96, sass/_header.scss */
 .main-navigation ul ul ul { left: 100%; top: 0; }
 
-/* Small menu */
-/* line 107, sass/_header.scss */
-.menu-toggle { display: none; cursor: pointer; }
-
-@media screen and (max-width: 600px) { /* line 113, sass/_header.scss */
-  .menu-toggle, .main-navigation.toggled .nav-menu { display: block; }
-  /* line 118, sass/_header.scss */
-  .main-navigation ul { display: none; } }
 /* line 1, sass/_footer.scss */
 .site-footer { text-align: center; margin: 20px auto; padding: 20px 0 0; font-size: 10px; }
 
@@ -423,3 +415,18 @@ embed, iframe, object { max-width: 100%; }
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 /* line 11, sass/_infinitescroll.scss */
 .infinity-end.neverending .site-footer { display: block; }
+
+@media only screen and (max-width: 768px) { /* line 3, sass/_responsive.scss */
+  .site { margin: 20px auto; }
+  /* line 7, sass/_responsive.scss */
+  .site-header { padding: 10px 20px; margin: 0px 20px; }
+  /* line 11, sass/_responsive.scss */
+  .site-header .site-title { font-size: 42px; margin-bottom: 15px; }
+  /* line 17, sass/_responsive.scss */
+  .main-navigation { width: 100%; }
+  /* line 21, sass/_responsive.scss */
+  .content-area, .widget-area { width: 100%; padding: 0; }
+  /* line 27, sass/_responsive.scss */
+  .site-content { padding: 10px 20px; margin: 0 20px; background-color: white; }
+  /* line 34, sass/_responsive.scss */
+  .site-footer .site-info .sep { display: block; visibility: hidden; height: 0; } }

@@ -25,7 +25,6 @@
 	<header id="masthead" class="site-header" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
             <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Craft <span class="accent">&amp;</span> Composition</a></h1>
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'CraftAndComposition' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu cf' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

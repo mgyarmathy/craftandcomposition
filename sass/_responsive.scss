@@ -1,0 +1,40 @@
+@media only screen and (max-width : 768px) {
+
+	.site {
+		margin: 20px auto;
+	}
+
+	.site-header {
+		padding: 10px 20px;
+		margin: 0px 20px;
+
+		.site-title {
+			font-size: 42px;
+			margin-bottom: 15px;
+		}
+	}
+
+	.main-navigation {
+		width: 100%;
+	}
+
+	.content-area,
+	.widget-area {
+		width: 100%;
+		padding: 0;
+	}
+
+	.site-content {
+    	padding: 10px 20px;
+    	margin: 0 20px;
+    	background-color: white;
+	}
+
+	.site-footer {
+		.site-info .sep {
+			display: block;
+			visibility: hidden;
+			height: 0;
+		}
+	}
+}
