@@ -11,29 +11,14 @@
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php CraftAndComposition_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'CraftAndComposition' ) ); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'CraftAndComposition' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
+			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
 				$categories_list = get_the_category_list( __( ', ', 'CraftAndComposition' ) );
 				if ( $categories_list && CraftAndComposition_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'CraftAndComposition' ), $categories_list ); ?>
+				<?php printf( __( ' in %1$s', 'CraftAndComposition' ), $categories_list ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 
@@ -47,11 +32,25 @@
 			</span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
-
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'CraftAndComposition' ), __( '1 Comment', 'CraftAndComposition' ), __( '% Comments', 'CraftAndComposition' ) ); ?></span>
+		</div><!-- .entry-meta -->
 		<?php endif; ?>
+	</header><!-- .entry-header -->
 
-		<?php edit_post_link( __( 'Edit', 'CraftAndComposition' ), '<span class="edit-link">', '</span>' ); ?>
+	<div class="entry-content">
+		<?php $first_image = get_first_image();
+		if ($first_image != '') { ?>
+			<a href="<?php the_permalink(); ?>"><img src="<?php echo $first_image ?>" alt="<?php the_title(); ?>"/></a>
+		<?php } ?>
+		<?php the_excerpt(); ?>
+		<a href="<?php the_permalink(); ?>" title="Read the rest of <?php the_title(); ?>" class="more-link">Read More</a>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'CraftAndComposition' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -12,8 +12,13 @@ textarea {
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
 	font-family: $header-font;
-    font-weight: 700;
 	clear: both;
+
+	a {
+		@include hoverActiveFocus {
+			text-decoration: none;
+		}
+	}
 }
 
 h1 {
@@ -39,7 +44,7 @@ p {
 	margin-bottom: $vspacing;
 }
 ul, ol {
-	margin: 0 0 $vspacing 3em;
+	margin: 0 0 $vspacing 1.25em;
 }
 ul {
 	list-style: disc;
@@ -132,7 +137,7 @@ a {
 	color: $link-color;
     text-decoration: none;
 	@include hoverActiveFocus {
-		color: darken($link-color, 30%);
+		text-decoration: underline;
 	}
 }
 a:visited {

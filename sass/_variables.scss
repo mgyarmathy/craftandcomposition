@@ -1,6 +1,18 @@
 //http://hellohappy.org/beautiful-web-type/
 
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic|Fredericka+the+Great|Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Questrial|Vidaloka);
+
+@font-face {
+    font-family: 'Quaver Serif';
+    src: url('fonts/quaverserif-webfont.eot');
+    src: url('fonts/quaverserif-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/quaverserif-webfont.woff2') format('woff2'),
+         url('fonts/quaverserif-webfont.woff') format('woff'),
+         url('fonts/quaverserif-webfont.ttf') format('truetype'),
+         url('fonts/quaverserif-webfont.svg#quaver_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // Some common variables and mixins to get you started.
 // Variables allow you to re-use colors, sizes, and other values without repeating
@@ -17,14 +29,14 @@ $site-max-width: 1000px;
 
 $type-1: 36px;
 $type-2: 24px;
-$type-3: 14px;
+$type-3: 16px;
 $type-4: 12px;
 $type-5: 10px;
 
 
 /* colors */
 $dark-gray: #27251F;
-$navy: #004D5C;
+$navy: #003399;
 $tan: #D6D0C3;
 
 // base color scheme
@@ -34,8 +46,9 @@ $accent-color: $navy;
 $link-color: $accent-color;
 $link-visited: purple;
 
-$base-font: 'Lora', sans-serif;
-$header-font: 'Open Sans Condensed', serif; // you can refer to other variables
+$base-font: 'Questrial', sans-serif;
+$header-font: 'Vidaloka', serif;
+$blog-title-font: 'Quaver Serif', serif;
 
 
 .accent {

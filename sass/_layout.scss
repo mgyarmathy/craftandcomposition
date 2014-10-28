@@ -1,7 +1,6 @@
 * { @include box-sizing(border-box); }
 
 body {
-    background-color: $tan;
     background-image: url('images/debut_light.png');
 }
 
@@ -30,6 +29,7 @@ body {
 .widget-area {
     width: 29.5%;
     padding-left: 20px;
+    font-size: $type-3 - 2px;
 
     h1 { 
         font-size: $type-2;

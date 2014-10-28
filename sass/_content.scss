@@ -28,3 +28,7 @@
 .entry-title a {
     color: $dark-gray;
 }
+
+.entry-meta, .entry-footer {
+	font-size: $type-3 - 2px;
+}

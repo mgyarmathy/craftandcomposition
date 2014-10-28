@@ -4,9 +4,15 @@
     background: white;
 
     .site-title {
-        font-family: 'Fredericka the Great', cursive;
+        font-family: $blog-title-font;
         font-weight: 400;
         font-size: 64px;
+
+        a {
+        	@include hoverActiveFocus {
+				text-decoration: none !important;
+			}
+		}
     }
 
     a {
@@ -56,7 +62,7 @@
 
 			a {
 				/*display: block;*/
-				text-decoration: none;
+				/*text-decoration: none;*/
 			}
 
 			// link hover

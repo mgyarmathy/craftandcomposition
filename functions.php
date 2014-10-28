@@ -128,3 +128,24 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function no_excerpt_more_text( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'no_excerpt_more_text');
+
+function get_first_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches [1] [0];
+
+	// no image found display default image instead
+	if(empty($first_img)){
+	$first_img = '';
+	}
+
+	return $first_img;
+}

@@ -84,11 +84,21 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: 2px 2px 2px 5px;
 }
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
 	padding-left: 3px;
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
+}
+
+input[type="search"],
+input[type="email"] {
+	display: inline-block !important;
+	width: 150px !important;
+}
+
+.mc4wp-form {
+	margin: 0 !important;
 }

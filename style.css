@@ -19,10 +19,11 @@ Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and Blueprint http://www.blueprintcss.org/
 */
-@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic|Fredericka+the+Great|Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Questrial|Vidaloka);
+@font-face { font-family: 'Quaver Serif'; src: url("fonts/quaverserif-webfont.eot"); src: url("fonts/quaverserif-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/quaverserif-webfont.woff2") format("woff2"), url("fonts/quaverserif-webfont.woff") format("woff"), url("fonts/quaverserif-webfont.ttf") format("truetype"), url("fonts/quaverserif-webfont.svg#quaver_serifregular") format("svg"); font-weight: normal; font-style: normal; }
 /* colors */
-/* line 41, sass/_variables.scss */
-.accent { color: #004D5C; }
+/* line 54, sass/_variables.scss */
+.accent { color: #003399; }
 
 /* =Reset
 -------------------------------------------------------------- */
@@ -91,105 +92,107 @@ a img { border: 0; }
 
 /* Clearing */
 /* line 1, sass/_typography.scss */
-body, button, input, select, textarea { color: #27251F; font-family: "Lora", sans-serif; font-size: 14px; line-height: 1.5; }
+body, button, input, select, textarea { color: #27251F; font-family: "Questrial", sans-serif; font-size: 16px; line-height: 1.5; }
 
 /* Headings */
 /* line 13, sass/_typography.scss */
-h1, h2, h3, h4, h5, h6 { font-family: "Open Sans Condensed", serif; font-weight: 700; clear: both; }
+h1, h2, h3, h4, h5, h6 { font-family: "Vidaloka", serif; clear: both; }
+/* line 12, sass/_mixins.scss */
+h1 a:hover, h1 a:active, h1 a:focus, h2 a:hover, h2 a:active, h2 a:focus, h3 a:hover, h3 a:active, h3 a:focus, h4 a:hover, h4 a:active, h4 a:focus, h5 a:hover, h5 a:active, h5 a:focus, h6 a:hover, h6 a:active, h6 a:focus { text-decoration: none; }
 
-/* line 19, sass/_typography.scss */
+/* line 24, sass/_typography.scss */
 h1 { font-size: 36px; }
 
-/* line 23, sass/_typography.scss */
+/* line 28, sass/_typography.scss */
 h2 { font-size: 24px; }
 
-/* line 27, sass/_typography.scss */
-h3 { font-size: 14px; }
+/* line 32, sass/_typography.scss */
+h3 { font-size: 16px; }
 
-/* line 30, sass/_typography.scss */
+/* line 35, sass/_typography.scss */
 hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 1.5em; }
 
 /* Text elements */
-/* line 38, sass/_typography.scss */
+/* line 43, sass/_typography.scss */
 p { margin-bottom: 1.5em; }
 
-/* line 41, sass/_typography.scss */
-ul, ol { margin: 0 0 1.5em 3em; }
+/* line 46, sass/_typography.scss */
+ul, ol { margin: 0 0 1.5em 1.25em; }
 
-/* line 44, sass/_typography.scss */
+/* line 49, sass/_typography.scss */
 ul { list-style: disc; }
 
-/* line 47, sass/_typography.scss */
+/* line 52, sass/_typography.scss */
 ol { list-style: decimal; }
 
-/* line 50, sass/_typography.scss */
+/* line 55, sass/_typography.scss */
 li > ul, li > ol { margin-bottom: 0; margin-left: 1.5em; }
 
-/* line 55, sass/_typography.scss */
+/* line 60, sass/_typography.scss */
 dt { font-weight: bold; }
 
-/* line 58, sass/_typography.scss */
+/* line 63, sass/_typography.scss */
 dd { margin: 0 1.5em 1.5em; }
 
-/* line 61, sass/_typography.scss */
+/* line 66, sass/_typography.scss */
 b, strong { font-weight: bold; }
 
-/* line 64, sass/_typography.scss */
+/* line 69, sass/_typography.scss */
 dfn, cite, em, i { font-style: italic; }
 
-/* line 67, sass/_typography.scss */
+/* line 72, sass/_typography.scss */
 blockquote { margin: 0 1.5em; }
 
-/* line 70, sass/_typography.scss */
+/* line 75, sass/_typography.scss */
 address { margin: 0 0 1.5em; }
 
-/* line 73, sass/_typography.scss */
+/* line 78, sass/_typography.scss */
 pre { background: #eee; font-family: "Courier 10 Pitch", Courier, monospace; font-size: 15px; font-size: 1.5rem; line-height: 1.6; margin-bottom: 1.6em; padding: 1.6em; overflow: auto; max-width: 100%; }
 
-/* line 84, sass/_typography.scss */
+/* line 89, sass/_typography.scss */
 code, kbd, tt, var { font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
 
-/* line 87, sass/_typography.scss */
+/* line 92, sass/_typography.scss */
 abbr, acronym { border-bottom: 1px dotted #666; cursor: help; }
 
-/* line 91, sass/_typography.scss */
+/* line 96, sass/_typography.scss */
 mark, ins { background: #fff9c0; text-decoration: none; }
 
-/* line 95, sass/_typography.scss */
+/* line 100, sass/_typography.scss */
 sup, sub { font-size: 75%; height: 0; line-height: 0; position: relative; vertical-align: baseline; }
 
-/* line 103, sass/_typography.scss */
+/* line 108, sass/_typography.scss */
 sup { bottom: 1ex; }
 
-/* line 106, sass/_typography.scss */
+/* line 111, sass/_typography.scss */
 sub { top: .5ex; }
 
-/* line 109, sass/_typography.scss */
+/* line 114, sass/_typography.scss */
 small { font-size: 75%; }
 
-/* line 112, sass/_typography.scss */
+/* line 117, sass/_typography.scss */
 big { font-size: 125%; }
 
-/* line 115, sass/_typography.scss */
+/* line 120, sass/_typography.scss */
 figure { margin: 0; }
 
-/* line 118, sass/_typography.scss */
+/* line 123, sass/_typography.scss */
 table { margin: 0 0 1.5em; width: 100%; }
 
-/* line 122, sass/_typography.scss */
+/* line 127, sass/_typography.scss */
 th { font-weight: bold; }
 
-/* line 125, sass/_typography.scss */
+/* line 130, sass/_typography.scss */
 img { height: auto; /* Make sure images are scaled correctly. */ max-width: 100%; /* Adhere to container width. */ }
 
 /* Links */
-/* line 131, sass/_typography.scss */
-a { color: #004D5C; text-decoration: none; }
+/* line 136, sass/_typography.scss */
+a { color: #003399; text-decoration: none; }
 /* line 12, sass/_mixins.scss */
-a:hover, a:active, a:focus { color: black; }
+a:hover, a:active, a:focus { text-decoration: underline; }
 
-/* line 138, sass/_typography.scss */
-a:visited { color: #004D5C; }
+/* line 143, sass/_typography.scss */
+a:visited { color: #003399; }
 
 /* line 1, sass/_forms.scss */
 button, input, select, textarea { font-size: 100%; /* Corrects font size not being inherited in all browsers */ margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */ vertical-align: baseline; /* Improves appearance and consistency in all browsers */ *vertical-align: middle; /* Improves appearance and consistency in all browsers */ }
@@ -222,60 +225,68 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus { color: #111; }
 
 /* line 82, sass/_forms.scss */
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] { padding: 3px; }
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] { padding: 2px 2px 2px 5px; }
 
 /* line 89, sass/_forms.scss */
 textarea { overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */ padding-left: 3px; vertical-align: top; /* Improves readability and alignment in all browsers */ width: 98%; }
+
+/* line 96, sass/_forms.scss */
+input[type="search"], input[type="email"] { display: inline-block !important; width: 150px !important; }
+
+/* line 102, sass/_forms.scss */
+.mc4wp-form { margin: 0 !important; }
 
 /* line 1, sass/_layout.scss */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 /* line 3, sass/_layout.scss */
-body { background-color: #D6D0C3; background-image: url("images/debut_light.png"); }
+body { background-image: url("images/debut_light.png"); }
 
-/* line 8, sass/_layout.scss */
+/* line 7, sass/_layout.scss */
 .site { max-width: 1000px; margin: 40px auto; }
 
-/* line 13, sass/_layout.scss */
+/* line 12, sass/_layout.scss */
 .site-content { padding: 10px 80px; background-color: white; }
 
-/* line 18, sass/_layout.scss */
+/* line 17, sass/_layout.scss */
 .content-area, .widget-area { margin: 0; padding: 0; display: inline-block; vertical-align: top; }
 
-/* line 25, sass/_layout.scss */
+/* line 24, sass/_layout.scss */
 .content-area { width: 70%; padding-right: 20px; }
 
-/* line 30, sass/_layout.scss */
-.widget-area { width: 29.5%; padding-left: 20px; }
+/* line 29, sass/_layout.scss */
+.widget-area { width: 29.5%; padding-left: 20px; font-size: 14px; }
 /* line 34, sass/_layout.scss */
 .widget-area h1 { font-size: 24px; }
 
 /* line 1, sass/_header.scss */
 .site-header { padding: 30px 0; margin: 0px auto; background: white; }
 /* line 6, sass/_header.scss */
-.site-header .site-title { font-family: 'Fredericka the Great', cursive; font-weight: 400; font-size: 64px; }
-/* line 12, sass/_header.scss */
+.site-header .site-title { font-family: "Quaver Serif", serif; font-weight: 400; font-size: 64px; }
+/* line 12, sass/_mixins.scss */
+.site-header .site-title a:hover, .site-header .site-title a:active, .site-header .site-title a:focus { text-decoration: none !important; }
+/* line 18, sass/_header.scss */
 .site-header a { color: #27251F; }
 
 /* =Menu
 ----------------------------------------------- */
-/* line 21, sass/_header.scss */
+/* line 27, sass/_header.scss */
 .main-navigation { clear: both; display: block; /*float: left;*/ text-align: center; width: 70%; margin: 0 auto; }
-/* line 29, sass/_header.scss */
-.main-navigation .menu { /*background-color: $tan;*/ /*background-color: white;*/ font-family: "Lora", sans-serif; font-size: 12px; list-style: none; margin: 0; padding-left: 0; text-transform: uppercase; border: 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
-/* line 42, sass/_header.scss */
+/* line 35, sass/_header.scss */
+.main-navigation .menu { /*background-color: $tan;*/ /*background-color: white;*/ font-family: "Questrial", sans-serif; font-size: 12px; list-style: none; margin: 0; padding-left: 0; text-transform: uppercase; border: 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+/* line 48, sass/_header.scss */
 .main-navigation .menu .menu-item { display: inline-block; }
-/* line 51, sass/_header.scss */
-.main-navigation ul li { /*float: left;*/ position: relative; padding: 5px 20px; }
 /* line 57, sass/_header.scss */
-.main-navigation ul li a { /*display: block;*/ text-decoration: none; }
-/* line 65, sass/_header.scss */
+.main-navigation ul li { /*float: left;*/ position: relative; padding: 5px 20px; }
+/* line 63, sass/_header.scss */
+.main-navigation ul li a { /*display: block;*/ /*text-decoration: none;*/ }
+/* line 71, sass/_header.scss */
 .main-navigation ul li:hover > ul { display: block; }
-/* line 75, sass/_header.scss */
+/* line 81, sass/_header.scss */
 .main-navigation ul ul { box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); display: none; float: left; position: absolute; top: 1.5em; left: 0; z-index: 99999; }
-/* line 89, sass/_header.scss */
+/* line 95, sass/_header.scss */
 .main-navigation ul ul li a { width: 200px; }
-/* line 96, sass/_header.scss */
+/* line 102, sass/_header.scss */
 .main-navigation ul ul ul { left: 100%; top: 0; }
 
 /* line 1, sass/_footer.scss */
@@ -300,6 +311,9 @@ body { background-color: #D6D0C3; background-image: url("images/debut_light.png"
 
 /* line 28, sass/_content.scss */
 .entry-title a { color: #27251F; }
+
+/* line 32, sass/_content.scss */
+.entry-meta, .entry-footer { font-size: 14px; }
 
 /* =Asides
 ----------------------------------------------- */
@@ -417,16 +431,18 @@ embed, iframe, object { max-width: 100%; }
 .infinity-end.neverending .site-footer { display: block; }
 
 @media only screen and (max-width: 768px) { /* line 3, sass/_responsive.scss */
+  body, button, input, select, textarea { color: #27251F; font-family: "Questrial", sans-serif; font-size: 14px; line-height: 1.5; }
+  /* line 14, sass/_responsive.scss */
   .site { margin: 20px auto; }
-  /* line 7, sass/_responsive.scss */
+  /* line 18, sass/_responsive.scss */
   .site-header { padding: 10px 20px; margin: 0px 20px; }
-  /* line 11, sass/_responsive.scss */
+  /* line 22, sass/_responsive.scss */
   .site-header .site-title { font-size: 42px; margin-bottom: 15px; }
-  /* line 17, sass/_responsive.scss */
+  /* line 28, sass/_responsive.scss */
   .main-navigation { width: 100%; }
-  /* line 21, sass/_responsive.scss */
+  /* line 32, sass/_responsive.scss */
   .content-area, .widget-area { width: 100%; padding: 0; }
-  /* line 27, sass/_responsive.scss */
+  /* line 38, sass/_responsive.scss */
   .site-content { padding: 10px 20px; margin: 0 20px; background-color: white; }
-  /* line 34, sass/_responsive.scss */
+  /* line 45, sass/_responsive.scss */
   .site-footer .site-info .sep { display: block; visibility: hidden; height: 0; } }
